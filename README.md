@@ -1,10 +1,6 @@
 # Autonomous Data Science Co-Pilot
 
-## Project Overview
-
-Autonomous Data Science Co-Pilot is an AI-powered data analysis application built using Python, Streamlit, Google Gemini AI, and Retrieval-Augmented Generation (RAG). The application enables users to upload datasets, perform exploratory data analysis, visualize data through interactive charts, ask natural language questions, and generate AI-powered PDF reports.
-
-The project combines traditional data science techniques with Generative AI to create an intelligent assistant capable of answering both dataset-specific and general data science questions.
+An AI-powered Data Science Assistant that enables users to upload datasets, perform exploratory data analysis, visualize data, generate insights, answer natural language questions, and retrieve domain knowledge using Retrieval-Augmented Generation (RAG).
 
 ---
 
@@ -12,13 +8,10 @@ The project combines traditional data science techniques with Generative AI to c
 
 * Upload CSV and Excel datasets
 * Interactive dataset preview
-* Dataset summary and descriptive statistics
-* AI-generated dataset insights
-* Dataset Health Score
-* Natural Language Question Answering
-* Retrieval-Augmented Generation (RAG)
-* Google Gemini AI Integration
-* Interactive Data Visualizations
+* AI-generated insights
+* Dataset health score
+* Statistical summary
+* Interactive visualizations
 
   * Histogram
   * Bar Chart
@@ -27,9 +20,10 @@ The project combines traditional data science techniques with Generative AI to c
   * Box Plot
   * Pie Chart
   * Correlation Heatmap
-* AI-generated PDF Report
-* Knowledge Base for Data Science Concepts
-* Modular project architecture
+* Natural language dataset querying
+* Retrieval-Augmented Generation (RAG)
+* Gemini AI integration
+* Automatic report generation
 
 ---
 
@@ -40,48 +34,17 @@ The project combines traditional data science techniques with Generative AI to c
 * Pandas
 * NumPy
 * Plotly
-* Scikit-learn
 * Google Gemini API
 * Sentence Transformers
 * FAISS
-* ReportLab
-* python-dotenv
+* Scikit-learn
 
 ---
 
-## Project Architecture
+## Project Structure
 
 ```text
-User
-   │
-   ▼
-Streamlit Interface
-   │
-   ▼
-User Query
-   │
-   ▼
-Agent
-   │
-   ├── Rule-Based Answers
-   │
-   └── RAG Pipeline
-         │
-         ├── Sentence Transformer
-         ├── FAISS Vector Search
-         ├── Knowledge Base Retrieval
-         └── Google Gemini AI
-                    │
-                    ▼
-             Final Response
-```
-
----
-
-## Folder Structure
-
-```text
-Autonomous_DataScience_CoPilot/
+Autonomous_DataScience_Copilot/
 │
 ├── app.py
 ├── agent.py
@@ -92,62 +55,76 @@ Autonomous_DataScience_CoPilot/
 ├── report_generator.py
 ├── requirements.txt
 ├── README.md
-├── .env
-│
-├── docs/
-├── data/
-└── venv/
+└── .gitignore
 ```
 
 ---
 
-## Installation
-
-Clone the repository.
-
-Install the required packages.
-
-```bash
-pip install -r requirements.txt
-```
-
-Create a `.env` file.
-
-```text
-GEMINI_API_KEY=YOUR_API_KEY
-```
-
-Run the application.
-
-```bash
-streamlit run app.py
-```
-
----
-
-## How It Works
+## Workflow
 
 1. Upload a CSV or Excel dataset.
-2. Explore the dataset using interactive visualizations.
-3. View AI-generated insights and health score.
-4. Ask questions in natural language.
-5. The system first checks rule-based responses.
-6. If needed, the RAG pipeline retrieves relevant knowledge using FAISS.
-7. Google Gemini generates a context-aware answer.
-8. Generate and download an AI-powered PDF report.
+2. Explore the dataset preview.
+3. View AI-generated insights.
+4. Generate interactive visualizations.
+5. Ask questions in natural language.
+6. Retrieve additional knowledge using RAG.
+7. Generate reports.
+
+---
+
+## Screenshots
+
+### Home Page
+
+*(Insert Screenshot Here)*
+
+---
+
+### Dataset Preview
+
+*(Insert Screenshot Here)*
+
+---
+
+### AI Insights
+
+*(Insert Screenshot Here)*
+
+---
+
+### Interactive Charts
+
+*(Insert Screenshot Here)*
+
+---
+
+### Correlation Heatmap
+
+*(Insert Screenshot Here)*
+
+---
+
+### Question Answering
+
+*(Insert Screenshot Here)*
+
+---
+
+### Generated Report
+
+*(Insert Screenshot Here)*
 
 ---
 
 ## Future Enhancements
 
-* Support for multiple file uploads
-* SQL database connectivity
-* Automatic machine learning (AutoML)
-* Predictive analytics
-* Interactive dashboards
-* Voice-based AI assistant
+* PDF document ingestion
+* Multiple dataset support
+* Dashboard export
+* Advanced ML model recommendations
+* Time-series forecasting
+* Automatic anomaly detection
 * Cloud deployment
-* User authentication
 
 ---
 
@@ -155,10 +132,5 @@ streamlit run app.py
 
 **Areeba Farooqui**
 
-Project developed as part of an AI/Data Science internship.
+Developed as the Final Project during the Celebal Technologies Internship.
 
----
-
-## License
-
-This project is intended for educational and internship purposes.
